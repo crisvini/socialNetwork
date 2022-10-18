@@ -2,6 +2,10 @@
     font-family: 'Ubuntu', sans-serif !important;
 }
 
+input:focus {
+    outline: none !important;
+}
+
 .logo-color {
     color: #ff7400 !important;
 }
@@ -24,6 +28,36 @@
 
 .additional-logo-background-color {
     background-color: #86a0d7 !important;
+}
+
+.logo-button-color {
+    background-color: #ff7400 !important;
+    color: white !important;
+}
+
+.logo-button-color:hover {
+    background-color: #ff4d00 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
+}
+
+.logo-link-color {
+    color: #ff7400 !important;
+    cursor: pointer !important;
+}
+
+.logo-link-color:hover {
+    color: #ff4d00 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
+}
+
+.label-alert {
+    color: red !important;
+}
+
+.input-alert {
+    border: 2px solid red !important;
 }
 
 /* Dark Mode */
@@ -62,6 +96,10 @@
 
     .background-dark {
         background-color: #191919 !important;
+    }
+
+    .border-medium {
+        border: 2px solid #292929;
     }
 }
 
@@ -117,5 +155,9 @@
 
     .background-dark {
         background-color: #c6c3b0 !important;
+    }
+
+    .border-medium {
+        border: 2px solid #f9f9f7;
     }
 }

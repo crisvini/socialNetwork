@@ -14,6 +14,7 @@ class Components
               <link rel="stylesheet" href="./css/style.css">
               <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
               <script src="./lib/vanilla-masker.min.js"></script>
+              <script src="./js/functions.js"></script>
               <title>socialNetwork > ' . $title . '</title>';
     }
 
