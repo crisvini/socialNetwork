@@ -9,3 +9,19 @@ function fillingAlert(inputId, labelId = null) {
         document.querySelector(inputId).classList.remove("input-alert");
     }
 }
+
+function escondeSenha(closeId, openId, inputId) {
+    $(openId).removeClass("d-block");
+    $(openId).addClass("d-none");
+    $(closeId).removeClass("d-none");
+    $(closeId).addClass("d-block");
+    $(inputId).attr("type", "password");
+}
+
+function mostraSenha(closeId, openId, inputId) {
+    $(closeId).removeClass("d-block");
+    $(closeId).addClass("d-none");
+    $(openId).removeClass("d-none");
+    $(openId).addClass("d-block");
+    $(inputId).attr("type", "text");
+}

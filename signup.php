@@ -3,7 +3,7 @@
 <?= Components::lang(); ?>
 
 <head>
-    <?= Components::head("Login"); ?>
+    <?= Components::head("Sign up"); ?>
 </head>
 
 <body class="background-dark">
@@ -16,13 +16,11 @@
                 </div>
                 <div class="mt-6 text-center">
                     <input oninput="fillingAlert('#email');" type="email" class="border-medium w-5/6 lg:w-3/6 background-medium p-2 rounded-lg color-dark" placeholder="E-mail" id="email">
-                    <img src="./assets/eye-opened.svg" class="icon-eye" id="eye_opened">
-                    <img src="./assets/eye-closed.svg" class="icon-eye" id="eye_closed">
                     <input oninput="fillingAlert('#password');" type="password" class="border-medium mt-4 w-5/6 lg:w-3/6 background-medium p-2 rounded-lg color-dark" placeholder="Password" id="password">
                     <button class="mt-6 w-5/6 lg:w-3/6 p-2 rounded-lg logo-button-color">Sign in</button>
                 </div>
                 <div class="mt-2 text-center">
-                    <span class="w-full logo-link-color hover:underline" onclick="window.location.href = './signup.php'">Don't have an account? Sign up</span>
+                    <span class="w-full logo-link-color hover:underline" onclick="window.location.href = './registration.php'">Don't have an account? Sign up</span>
                 </div>
             </div>
             <div class="w-full order-1 lg:order-2 col-span-6 hidden lg:block background-default">
