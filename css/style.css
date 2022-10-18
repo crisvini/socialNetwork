@@ -1,14 +1,13 @@
-*, p {
-    padding: 0px !important;
-    margin: 0px !important;
+* {
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .logo-color {
-    color: #ff4d00 !important;
+    color: #ff7400 !important;
 }
 
 .secondary-logo-color {
-    color: #ff7400 !important;
+    color: #ff4d00 !important;
 }
 
 .additional-logo-color {
@@ -16,11 +15,11 @@
 }
 
 .logo-background-color {
-    background-color: #ff4d00 !important;
+    background-color: #ff7400 !important;
 }
 
 .secondary-logo-background-color {
-    background-color: #ff7400 !important;
+    background-color: #ff4d00 !important;
 }
 
 .additional-logo-background-color {
@@ -43,6 +42,10 @@
 
     .color-dark {
         color: #c6c3b0 !important;
+    }
+
+    ::placeholder {
+        color: inherit !important;
     }
 
     .background-light {
@@ -77,6 +80,26 @@
     }
 
     .color-dark {
+        color: #191919 !important;
+    }
+
+    ::placeholder {
+        color: inherit !important;
+    }
+
+    .color-light::placeholder {
+        color: #a59b9c !important;
+    }
+
+    .color-medium::placeholder {
+        color: #292929 !important;
+    }
+
+    .color-default::placeholder {
+        color: #202020 !important;
+    }
+
+    .color-dark::placeholder {
         color: #191919 !important;
     }
 
