@@ -1,4 +1,4 @@
-p, span {
+p, span, a, div, li {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -115,6 +115,14 @@ input:focus {
     color: inherit !important;
 }
 
+.logo-header {
+    width: 5% !important;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     .color-primary {
@@ -176,7 +184,7 @@ input:focus {
         background-color: #ffffff !important;
     }
 
-    .cbackground-secondary {
+    .background-secondary {
         background-color: #f9f9f7 !important;
     }
 

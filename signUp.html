@@ -23,63 +23,41 @@
     <script src="./js/functions.js"></script>
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <title>socialNetwork > Login</title>
+    <title>socialNetwork > Sign up</title>
 </head>
 
 <body class="background-quaternary vh-100">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <main class="container h-100 m-0 mw-100">
+        <div class="row">
+            <div class="background-secondary p-2 col-12 mx-auto text-center fs-4 color-primary fixed-top">
+                <span onclick="window.location.href = './index.html';" class="pointer">
+                    <img src="./assets/logo.png" style="width: 5vh;">&nbsp;<span
+                        class="color-primary align-middle fs-3">coffee
+                        cup</span>
+                </span>
+            </div>
+        </div>
         <div class="row h-100">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center background-quaternary">
                 <div class="row">
-                    <div class="col-11 col-lg-8 mx-auto text-center mt-3">
-                        <img style="width: 38%;" src="./assets/logo.png">
+                    <div class="col-11 col-lg-8 mx-auto text-left fs-5 color-primary mt-lg-4">
+                        <span onclick="window.location.href = './index.html';" class="pointer"><i
+                                class="fa-solid fa-arrow-left"></i>&nbsp;Login</span>
                     </div>
-                    <div class="col-11 col-lg-8 mx-auto text-center fs-4 color-primary mt-3">
-                        <span>coffee cup</span>
+                    <div class="col-11 col-lg-8 mx-auto text-left fs-4 color-primary mt-lg-4 mt-2">
+                        <span>Sign up</span>
+                    </div>
+                    <div class="col-11 col-lg-8 mx-auto mt-3">
+                        <input type="text" class="form-control background-secondary color-quaternary" id="name"
+                            placeholder="Name" oninput="fillingAlert('#name');">
+                    </div>
+                    <div class="col-11 col-lg-8 mx-auto mt-3">
+                        <input type="text" class="form-control background-secondary color-quaternary" id="last_name"
+                            placeholder="Last name" oninput="fillingAlert('#last_name');">
+                    </div>
+                    <div class="col-11 col-lg-8 mx-auto mt-3">
+                        <input type="text" class="form-control background-secondary color-quaternary" id="birth_date"
+                            placeholder="Birth date (yyyy/mm/dd)" oninput="fillingAlert('#birth_date');">
                     </div>
                     <div class="col-11 col-lg-8 mx-auto mt-3">
                         <input type="email" class="form-control background-secondary color-quaternary" id="email"
@@ -90,11 +68,12 @@
                             placeholder="Password" oninput="fillingAlert('#password');">
                     </div>
                     <div class="col-11 col-lg-8 mx-auto mt-3">
-                        <button class="btn primary-logo-button-color w-100">Sign in</button>
+                        <input type="password" class="form-control background-secondary color-quaternary"
+                            id="confirm_password" placeholder="Confirm password"
+                            oninput="fillingAlert('#confirm_password');">
                     </div>
-                    <div class="col-11 col-lg-8 mx-auto text-center mt-3">
-                        <span class="logo-link-color" onclick="window.location.href = './signUp.html'">Don't have an
-                            account? Sign up</span>
+                    <div class="col-11 col-lg-8 mx-auto mt-3">
+                        <button class="btn primary-logo-button-color w-100">Sign up</button>
                     </div>
                 </div>
             </div>
@@ -103,6 +82,11 @@
             </div>
         </div>
     </main>
+
+    <script>
+        VMasker(document.querySelector("#birth_date")).maskPattern("9999/99/99");
+    </script>
+
 </body>
 
 </html>
