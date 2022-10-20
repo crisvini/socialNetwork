@@ -73,19 +73,19 @@ input:focus {
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    .color-light {
+    .color-primary {
         color: #ffffff !important;
     }
 
-    .color-medium {
+    .color-secondary {
         color: #f9f9f7 !important;
     }
 
-    .color-default {
+    .color-tertiary {
         color: #edece6 !important;
     }
 
-    .color-dark {
+    .color-quaternary {
         color: #c6c3b0 !important;
     }
 
@@ -93,19 +93,19 @@ input:focus {
         color: inherit !important;
     }
 
-    .background-light {
+    .background-primary {
         background-color: #a59b9c !important;
     }
 
-    .background-medium {
+    .background-secondary {
         background-color: #292929 !important;
     }
 
-    .background-default {
+    .background-tertiary {
         background-color: #202020 !important;
     }
 
-    .background-dark {
+    .background-quaternary {
         background-color: #191919 !important;
     }
 
@@ -116,55 +116,39 @@ input:focus {
 
 /* Light Mode */
 @media (prefers-color-scheme: light) {
-    .color-light {
-        color: #a59b9c !important;
+    .color-primary {
+        color: #191919 !important;
     }
 
-    .color-medium {
-        color: #292929 !important;
-    }
-
-    .color-default {
+    .color-secondary {
         color: #202020 !important;
     }
 
-    .color-dark {
-        color: #191919 !important;
+    .color-tertiary {
+        color: #292929 !important;
+    }
+
+    .color-quaternary {
+        color: #a59b9c !important;
     }
 
     ::placeholder {
         color: inherit !important;
     }
 
-    .color-light::placeholder {
-        color: #a59b9c !important;
-    }
-
-    .color-medium::placeholder {
-        color: #292929 !important;
-    }
-
-    .color-default::placeholder {
-        color: #202020 !important;
-    }
-
-    .color-dark::placeholder {
-        color: #191919 !important;
-    }
-
-    .background-light {
+    .background-primary {
         background-color: #ffffff !important;
     }
 
-    .cbackground-medium {
+    .cbackground-secondary {
         background-color: #f9f9f7 !important;
     }
 
-    .background-default {
+    .background-tertiary {
         background-color: #edece6 !important;
     }
 
-    .background-dark {
+    .background-quaternary {
         background-color: #c6c3b0 !important;
     }
 
