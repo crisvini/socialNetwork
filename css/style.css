@@ -2,7 +2,7 @@ p, span, a, div, li {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none !important;
     box-shadow: none !important;
     border-color: #ff9740 !important;
@@ -38,6 +38,30 @@ input:focus {
 
 .additional-logo-background-color {
     background-color: #86a0d7 !important;
+}
+
+.primary-logo-hover-color:hover {
+    color: #ff7400 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
+}
+
+.secondary-logo-hover-color:hover {
+    color: #ff4d00 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
+}
+
+.tertiary-logo-hover-color:hover {
+    color: #ff9740 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
+}
+
+.additional-logo-hover-color:hover {
+    color: #86a0d7 !important;
+    transition-delay: 0.1s !important;
+    transition-duration: 0.1s !important;
 }
 
 .primary-logo-button-color {
@@ -123,6 +147,32 @@ input:focus {
     cursor: pointer !important;
 }
 
+.clear-button {
+    outline: none !important;
+    box-shadow: none I !important;
+    border: none !important;
+}
+
+.clear-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.custom-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     .color-primary {
@@ -157,8 +207,29 @@ input:focus {
         background-color: #191919 !important;
     }
 
+    .primary-border {
+        border: 1px solid #a59b9c !important;
+    }
+
+    .secondary-border {
+        border: 1px solid #292929 !important;
+    }
+
+    .tertiary-border {
+        border: 1px solid #202020 !important;
+    }
+
+    .quaternary-border {
+        border: 1px solid #191919 !important;
+    }
+
     .border-medium {
         border: 2px solid #292929;
+    }
+
+    .custom-dropdown-item:active {
+        text-decoration: none;
+        background-color: #a59b9c;
     }
 }
 
@@ -198,5 +269,10 @@ input:focus {
 
     .border-medium {
         border: 2px solid #f9f9f7;
+    }
+
+    .custom-dropdown-item:active {
+        text-decoration: none;
+        background-color: #ffffff;
     }
 }

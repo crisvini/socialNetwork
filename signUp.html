@@ -27,21 +27,29 @@
 </head>
 
 <body class="background-quaternary vh-100">
-    <main class="container h-100 m-0 mw-100">
+    <header class="container-fluid m-0 mw-100">
         <div class="row">
-            <div class="background-secondary p-2 col-12 mx-auto text-center fs-4 color-primary fixed-top">
-                <span onclick="window.location.href = './index.html';" class="pointer">
-                    <img src="./assets/logo.png" style="width: 5vh;">&nbsp;<span
-                        class="color-primary align-middle fs-3">coffee
-                        cup</span>
-                </span>
+            <div class="background-secondary p-2 col-12 mx-auto text-left fs-4 color-primary fixed-top">
+                <div class="row">
+                    <div class="col-11 col-lg-10 mx-auto">
+                        <span onclick="window.location.href = './index.html';" class="pointer">
+                            <img src="./assets/logo.png" style="width: 5vh;">&nbsp;<span
+                                class="color-primary align-middle fs-3">coffee
+                                cup</span>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
+
+    <main class="container h-100 m-0 mw-100">
         <div class="row h-100">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center background-quaternary">
                 <div class="row">
                     <div class="col-11 col-lg-8 mx-auto text-left fs-5 color-primary mt-lg-4">
-                        <span onclick="window.location.href = './index.html';" class="pointer"><i
+                        <span onclick="window.location.href = './index.html';"
+                            class="pointer tertiary-logo-hover-color"><i
                                 class="fa-solid fa-arrow-left"></i>&nbsp;Login</span>
                     </div>
                     <div class="col-11 col-lg-8 mx-auto text-left fs-4 color-primary mt-lg-4 mt-2">
@@ -73,7 +81,8 @@
                             oninput="fillingAlert('#confirm_password');">
                     </div>
                     <div class="col-11 col-lg-8 mx-auto mt-3">
-                        <button class="btn primary-logo-button-color w-100">Sign up</button>
+                        <button class="btn primary-logo-button-color w-100"
+                            onclick="window.location.href='./home.html'">Sign up</button>
                     </div>
                 </div>
             </div>

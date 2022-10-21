@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./lib/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/60656bf09a.js" crossorigin="anonymous"></script>
+    <script src="./lib/swal2/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="./lib/vanillaMasker/node_modules/vanilla-masker/build/vanilla-masker.min.js"></script>
+    <script src="./lib/bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/functions.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>socialNetwork > Home</title>
+</head>
+
+<body class="background-quaternary vh-100">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg background-secondary p-lg-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./home.html"><img src="./assets/logo.png"
+                        style="width: 3.5vh;">&nbsp;<span
+                        class="color-primary align-middle fs-5 tertiary-logo-hover-color">coffee
+                        cup</span></a>
+                <button class="navbar-toggler clear-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars color-primary"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link color-primary fs-6 tertiary-logo-hover-color" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-primary fs-6 tertiary-logo-hover-color"
+                                href="./searchFriends.html">Search for
+                                friends</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <ul class="navbar-nav flex-row flex-wrap ms-md-auto back">
+                            <li class="nav-item dropdown">
+                                <button type="button"
+                                    class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle color-primary tertiary-logo-hover-color"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                                    Cristian
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end background-tertiary">
+                                    <li>
+                                        <a class="custom-dropdown-item current color-primary tertiary-logo-hover-color"
+                                            aria-current="true" href="./profile.html">
+                                            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="custom-dropdown-item color-primary tertiary-logo-hover-color"
+                                            href="./configuration.html">
+                                            <i class="fa-solid fa-gear">
+                                            </i>&nbsp;&nbsp;Configurations
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container h-100 mt-2">
+        <div class="row background-secondary py-2 px-3" id="create_post">
+            <div class="col-11 mx-auto px-0">
+                <div class="pe-2 h-100">
+                    <textarea class="form-control background-tertiary primary-border color-primary h-100"
+                        placeholder="Thinking about something?"></textarea>
+                </div>
+            </div>
+            <div class="col-1 mx-auto px-0 text-center">
+                <div id="post_buttons">
+                    <span class="tertiary-logo-color mr-2 fs-4 primary-logo-hover-color pointer"
+                        id="add_image_button"><i class="fa-solid fa-image"></i></span>
+                    <div class="w-100"></div>
+                    <span class="tertiary-logo-color fs-4 primary-logo-hover-color pointer" id="post_button"><i
+                            class="fa-solid fa-paper-plane"></i></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
