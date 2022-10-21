@@ -13,8 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./lib/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- js -->
     <script src="https://kit.fontawesome.com/60656bf09a.js" crossorigin="anonymous"></script>
     <script src="./lib/swal2/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -23,7 +23,7 @@
     <script src="./js/functions.js"></script>
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <title>socialNetwork > Home</title>
+    <title>coffee cup > Home</title>
 </head>
 
 <body class="background-quaternary vh-100">
@@ -46,8 +46,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link color-primary fs-6 tertiary-logo-hover-color"
-                                href="./searchFriends.html">Search for
-                                friends</a>
+                                href="./searchFriends.html">Search</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -62,7 +61,7 @@
                                     <li>
                                         <a class="custom-dropdown-item current color-primary tertiary-logo-hover-color"
                                             aria-current="true" href="./profile.html">
-                                            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Profile
+                                            <i class="fa-regular fa-user"></i>&nbsp;&nbsp;Profile
                                         </a>
                                     </li>
                                     <li>
@@ -81,7 +80,7 @@
         </nav>
     </header>
 
-    <main class="container h-100 mt-2">
+    <main class="container h-100 mt-3 w-lg-35">
         <div class="row background-secondary py-2 px-3" id="create_post">
             <div class="col-11 mx-auto px-0">
                 <div class="pe-2 h-100">
@@ -91,11 +90,62 @@
             </div>
             <div class="col-1 mx-auto px-0 text-center">
                 <div id="post_buttons">
-                    <span class="tertiary-logo-color mr-2 fs-4 primary-logo-hover-color pointer"
-                        id="add_image_button"><i class="fa-solid fa-image"></i></span>
+                    <span class="color-primary mr-2 fs-4 tertiary-logo-hover-color pointer" id="add_image_button"><i
+                            class="fa-regular fa-image"></i></span>
                     <div class="w-100"></div>
                     <span class="tertiary-logo-color fs-4 primary-logo-hover-color pointer" id="post_button"><i
-                            class="fa-solid fa-paper-plane"></i></span>
+                            class="fa-regular fa-paper-plane"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-secondary py-2 mt-3" id="post_1">
+            <div class="col-12">
+                <div class="row px-3">
+                    <div class="col-1 text-start p-0">
+                        <i class="fa-regular fa-circle-user color-primary fs-1"></i>
+                    </div>
+                    <div class="col-6 text-start ms-2 ms-lg-3 p-0 align-self-center">
+                        <span class="color-primary">
+                            cristian.leoncini
+                        </span>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 p-0">
+                        <img class="w-100" src="./user/cristian.leoncini/posts/image_post_1.jpeg">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-1 me-3 ps-3 pe-0 text-start">
+                        <span class="color-primary tertiary-logo-hover-color fs-lg-3 fs-1 fw-light pointer"><i
+                                class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="col-2 text-start">
+                        <span class="color-primary tertiary-logo-hover-color fs-lg-3 fs-1 fw-light pointer"><i
+                                class="fa-regular fa-comment"></i></span>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 ps-3 pe-0 text-start">
+                        <span class="color-primary fs-6 fw-bold pointer">25 likes</span>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 ps-3 pe-0 text-start">
+                        <span class="color-primary fs-6 fw-bold pointer">cristian.leoncini&nbsp;&nbsp;</span>
+                        <span class="color-primary fs-6">São Paulo</span>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 ps-3 pe-0 text-start">
+                        <span class="color-quaternary fs-6 pointer">See all 2 comments</span>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 ps-3 pe-0 text-start">
+                        <span class="color-quaternary fs-10">2022/10/21 at 2pm</span>
+                    </div>
                 </div>
             </div>
         </div>
